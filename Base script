@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Clicker</title>
+    <script language="Javascript">
+function handleButtonClick() {
+    var textField = document.getElementById( "textField" );
+    var currentValue = parseInt(textField.value);
+
+    // Add one
+    currentValue = currentValue + 1;
+
+    // Put it back with the new +1'd value
+    textField.value = currentValue;
+}
+function handlebuttonclick() {
+    var textField = document.getElementById( "textField" );
+    var currentValue = parseInt(textField.value);
+
+    // Minus one
+    currentValue = currentValue - 1;
+
+    // Put it back with the new -1'd value
+    textField.value = currentValue;
+}
+
+</script>
+</head>
+<body>
+
+
+
+<script language="Javascript" type="text/javascript">  
+ function enable(){  
+  if (document.form="upgrade".clicked==''){  
+   document.agreement_form.clicker.disabled=true  
+  }else{  
+   document.agreement_form.clicker.disabled=false  
+  }  
+ }  
+</script>
+
+ <button type="button" form="upgrade" onclick="enable()" onclick="handlebuttonclick"/>Upgrade</button>
+ <br>
+ <button type="button" onClick="handleButtonClick()"/>Press here</button>
+ <input type="button" value="Clicker" disabled name="clicker"> 
+
+<input type="text" value="0" id="textField" readonly/>
+</body>
+</html>
